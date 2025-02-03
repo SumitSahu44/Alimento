@@ -86,6 +86,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
         $num = mysqli_num_rows($result);
 
         if ($num >= 1) {
+            // code for show all records in frontend 
             while ($row = mysqli_fetch_array($result)) {
                 echo '<div class="col-md-4 mb-4">
                           <div class="card">
