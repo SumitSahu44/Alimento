@@ -81,6 +81,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
     <div class="row">
         <?php
         include 'partials/_dbconnect.php';
+        // select all restaurant records 
         $query = "SELECT * FROM `restaurant` ORDER BY `r_rating` DESC";
         $result = mysqli_query($conn, $query);
         $num = mysqli_num_rows($result);
